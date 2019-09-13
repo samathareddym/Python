@@ -1,0 +1,36 @@
+choice=input("which datstructure do you want to use?"+
+		"1.lists"+
+		"2.tuples"+
+		"3.sets"+
+		"4.dictionary")
+if choice == '1':
+	list1=[]
+	choice1=input("select "+'"i"'+ " if you want the list to be in integer form and "+'"s"'+ " in form of a string")
+	if choice1 == 'i':
+		n=int(input("how many number of elements as input"))
+		for l in range(0,n):
+			m=int(input("enter the elements"))
+			print(list1)
+			list1.append(m)
+
+		choice2=input("choose which method"+" 5.append"+" 6.remove"+" 7.pop"+" 8.sort")
+		if choice2 == '5':
+			l1=int(input("enter a number to append"))
+			list1.append(l1)
+			print(list1)
+		elif choice2 == '6':
+			l2=int(input("enter a number to remove"))
+			list1.remove(l2)
+			print(list1)
+		elif choice2 == '7':
+			l3=int(input("enter a number to pop"))
+			list1.pop(l3)
+			print(list1)
+		else:
+			l4=int(input("enter a number to sort"))
+			l5=int(input("enter a number to sort"))
+			list1.sort(list1)
+			print(list1)
+
+
+
