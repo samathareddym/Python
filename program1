@@ -1,117 +1,119 @@
-choice=input("which data structure do you want to use?"+
-		"1.lists"+
-		"2.tuples"+
-		"3.sets"+
-		"4.dictionary")
+choice = input("which data structure do you want to use?" +
+               "1.lists" +
+               "2.tuples" +
+               "3.sets" +
+               "4.dictionary")
 if choice == '1':
-	list1=[]
-	choice1=input("select "+'"i"'+ " if you want the list to be in integer form and "+'"s"'+ " in form of a string")
-	if choice1 == 'i':
-		n=int(input("how many number of elements as input"))
-		for l in range(0,n):
-			m=int(input("enter the elements"))
-			print(list1)
-			list1.append(m)
-		choice2=input("choose which method"+" 5.append"+" 6.remove"+" 7.pop"+" 8.sort")
-		if choice2 == '5':
-			l1=int(input("enter a number to append"))
-			list1.append(l1)
-			print(list1)
-		elif choice2 == '6':
-			l2=int(input("enter a number to remove"))
-			list1.remove(l2)
-			print(list1)
-		elif choice2 == '7':
-			l3=int(input("enter a number to pop"))
-			list1.pop(l3)
-			print(list1)
-		else:
-			list1.sort(list1)
-			print(list1)
-	if choice1 == 's':
-		p=int(input("how many number of elements as input"))
-        for k in range(0,p):
-			z=str(input("enter the elements"))
-			print(list1)
-			list1.append(z)
-		choice3=input("choose which method"+" 5.append"+" 6.remove"+" 7.pop"+" 8.sort")
-		if choice3 == '5':
-			l1=str(input("enter a string to append"))
-			list1.append(l1)
-			print(list1)
-		elif choice2 == '6':
-			l2=str(input("enter a string to remove"))
-			list1.remove(l2)
-			print(list1)
-		elif choice2 == '7':
-			l3=str(input("enter a string to pop"))
-			list1.pop(l3)
-			print(list1)
-		else:
-			list1.sort(list1)
-			print(list1)
+    list1 = []
+    choice1 = input(
+        "select " + '"i"' + " if you want the list to be in integer form and " + '"s"' + " in form of a string")
+    if choice1 == 'i':
+        n = int(input("how many number of elements as input"))
+        for l in range(0, n):
+            m = int(input("enter the elements"))
+            print(list1)
+            list1.append(m)
+        choice2 = input("choose which method" + " 5.append" + " 6.remove" + " 7.pop" + " 8.sort")
+        if choice2 == '5':
+            l1 = int(input("enter a number to append"))
+            list1.append(l1)
+            print(list1)
+        elif choice2 == '6':
+            l2 = int(input("enter a number to remove"))
+            list1.remove(l2)
+            print(list1)
+        elif choice2 == '7':
+            l3 = int(input("enter a number to pop"))
+            list1.pop(l3)
+            print(list1)
+        else:
+            list1.sort(list1)
+            print(list1)
+    if choice1 == 's':
+        p = int(input("how many number of elements as input"))
+        for k in range(0, p):
+            z = str(input("enter the elements"))
+            print(list1)
+            list1.append(z)
+        choice3 = input("choose which method" + " 5.append" + " 6.remove" + " 7.pop" + " 8.sort")
+        if choice3 == '5':
+            l1 = str(input("enter a string to append"))
+            list1.append(l1)
+            print(list1)
+        elif choice2 == '6':
+            l2 = str(input("enter a string to remove"))
+            list1.remove(l2)
+            print(list1)
+        elif choice2 == '7':
+            l3 = str(input("enter a string to pop"))
+            list1.pop(l3)
+            print(list1)
+        else:
+            list1.sort(list1)
+            print(list1)
 if choice == '2':
-	tuple1=[]
-	choice1=input("select "+'"i"'+ " if you want the list to be in integer form and "+'"s"'+ "in form of a string")
-	if choice1 == 'i':
-		n=int(input("how many number of elements as input"))
-		for l in range(0,n):
-			o=int(input("enter the elements"))
-			print(tuple1)
-			tuple1.append(o)
-		choice2=input("choose which method"+" 9.append"+" 10.reversing"+" 11.deleting"+" 12.sorted")
-		if choice2 == '9':
-			l1=int(input("enter a number to append"))
-			tuple1.append(l1)
-			print(tuple1)
-		elif choice2 == '10':
-			print(tuple1[::-1])
-		elif choice2 == '11':
-			del tuple1
-			print(tuple1)
-		else:
-			print(sorted(tuple1))
-	if choice1 == 's':
-		n=str(input("how many number of elements as input"))
-		for l in range(0,n):
-			o=str(input("enter the elements"))
-			print(tuple1)
-			tuple1.append(o)
-		choice2=input("choose which method"+" 9.append"+" 10.reversing"+" 11.deleting"+" 12.sorted")
-		if choice2 == '9':
-			l1=str(input("enter a number to append"))
-			tuple1.append(l1)
-			print(tuple1)
-		elif choice2 == '10':
-			print(tuple1[::-1])
-		elif choice2 == '11':
-			del tuple1
-			print(tuple1)
-		else:
-			print(sorted(tuple1))
+    tuple1 = []
+    choice1 = input(
+        "select " + '"i"' + " if you want the list to be in integer form and " + '"s"' + "in form of a string")
+    if choice1 == 'i':
+        n = int(input("how many number of elements as input"))
+        for l in range(0, n):
+            o = int(input("enter the elements"))
+            print(tuple1)
+            tuple1.append(o)
+        choice2 = input("choose which method" + " 9.append" + " 10.reversing" + " 11.deleting" + " 12.sorted")
+        if choice2 == '9':
+            l1 = int(input("enter a number to append"))
+            tuple1.append(l1)
+            print(tuple1)
+        elif choice2 == '10':
+            print(tuple1[::-1])
+        elif choice2 == '11':
+            del tuple1
+            print(tuple1)
+        else:
+            print(sorted(tuple1))
+    if choice1 == 's':
+        n = str(input("how many number of elements as input"))
+        for l in range(0, n):
+            o = str(input("enter the elements"))
+            print(tuple1)
+            tuple1.append(o)
+        choice2 = input("choose which method" + " 9.append" + " 10.reversing" + " 11.deleting" + " 12.sorted")
+        if choice2 == '9':
+            l1 = str(input("enter a number to append"))
+            tuple1.append(l1)
+            print(tuple1)
+        elif choice2 == '10':
+            print(tuple1[::-1])
+        elif choice2 == '11':
+            del tuple1
+            print(tuple1)
+        else:
+            print(sorted(tuple1))
 if choice == '3':
-	set1=[]
-	n=int(input("how many number of elements as input"))
-	for l in range(0,n):
-		m=int(input("enter the elements"))
-		print(set1)
-		set1.add(m)
-		choice2=input("choose which method"+" 13.add"+" 14.discard"+" 15.update")
-		if choice2 == '13':
-			l1=int(input("enter a number to add"))
-			set1.add(l1)
-			print(set1)
-		elif choice2 == '14':
-			l2=int(input("enter a number to discard"))
-			set1.discard(l2)
-			print(set1)
-		else:
-			l3=int(input("enter a number to update"))
-			set1.update([l3])
-			print(set1)
+    set1 = []
+    n = int(input("how many number of elements as input"))
+    for l in range(0, n):
+        m = int(input("enter the elements"))
+        print(set1)
+        set1.add(m)
+        choice2 = input("choose which method" + " 13.add" + " 14.discard" + " 15.update")
+        if choice2 == '13':
+            l1 = int(input("enter a number to add"))
+            set1.add(l1)
+            print(set1)
+        elif choice2 == '14':
+            l2 = int(input("enter a number to discard"))
+            set1.discard(l2)
+            print(set1)
+        else:
+            l3 = int(input("enter a number to update"))
+            set1.update([l3])
+            print(set1)
 if choice == '4':
-	dict= {1: 'Geeks', 'name': 'For', 3: 'Geeks'}
-	print(dict)
+    dict = {1: 'Geeks', 'name': 'For', 3: 'Geeks'}
+    print(dict)
 
 
 
